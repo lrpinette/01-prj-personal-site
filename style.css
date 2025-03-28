@@ -1,1 +1,210 @@
-/* Add you CSS here */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center all text */
+  background-color: #333; /* Change background color to purple */
+  color: white; /* Set all text to white */
+}
+
+/* General styles for headers */
+h1, h2 {
+  font-family: 'Brush Script MT', cursive; /* Apply a cursive font to all headers */
+}
+
+h1 {
+  font-size: 2.5em; /* Increase font size for main headers */
+}
+
+h2 {
+  font-size: 2em; /* Increase font size for subheaders */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #553e66; /* Blue background */
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  color: white; /* Change heading text to white */
+}
+
+.hero p {
+  color: white; /* Change paragraph text to white */
+}
+
+.hero .profile-photo {
+  width: 150px; /* Set a fixed width for the photo */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the photo circular */
+  margin-bottom: 10px; /* Add space below the photo */
+  border: 3px solid #333; /* Add a border with the same color as the navbar */
+}
+
+/* Bio Section */
+.bio {
+  padding: 20px;
+  background-color: #white; /* Purple background */
+  display: flex; /* Arrange items in a row */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add space between the photo and text */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-direction: column; /* Stack header and content vertically */
+}
+
+.bio-content {
+  display: flex; /* Arrange photo and text side by side */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add space between the photo and text */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.bio h2 {
+  color: white; /* Change heading text to white */
+}
+
+.bio p {
+  max-width: 400px; /* Limit the width of the text */
+  text-align: left; /* Align text to the left */
+  color: white; /* Change paragraph text to white */
+}
+
+.bio .bio-photo {
+  width: 200px; /* Set a fixed width for the photo */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Slightly rounded corners */
+  margin: 10px 0; /* Add space around the photo */
+  flex-shrink: 0; /* Prevent the photo from shrinking */
+}
+
+/* Skills Section */
+.skills {
+  padding: 20px;
+  background-color: #553e66; /* Blue background */
+  display: flex; /* Arrange items in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+  justify-content: center; /* Center the items */
+  gap: 10px; /* Add space between the boxes */
+  flex-direction: column; /* Stack header and buttons vertically */
+  align-items: center; /* Center the header and buttons */
+}
+
+.skills ul {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Arrange buttons in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+  justify-content: center; /* Center the buttons */
+  gap: 15px; /* Add space between the buttons */
+  padding: 0; /* Remove default padding */
+}
+
+.skills li {
+  background-color: #333; /* Match the navbar color */
+  color: white; /* Ensure text remains white for readability */
+  padding: 10px; /* Add padding inside the boxes */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex; /* Arrange icon and text in a row */
+  align-items: center; /* Align icon and text vertically */
+  gap: 8px; /* Add space between the icon and text */
+  min-width: 100px; /* Set a minimum width for the boxes */
+  text-align: center; /* Center the text inside the boxes */
+}
+
+.skills .icon {
+  font-size: 1.2em; /* Slightly enlarge the icons */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 10px; /* Add padding inside the navbar */
+  position: sticky; /* Make the navbar stick to the top */
+  top: 0; /* Position it at the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 10px; /* Add space between links */
+  font-weight: bold; /* Make the text bold */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Projects Section */
+.projects {
+  padding: 20px;
+  background-color: #white; /* Purple background */
+  color: #333; /* Dark text */
+}
+
+.projects h2 {
+  color: white; /* Change heading text to white */
+}
+
+.projects p {
+  color: white; /* Change paragraph text to white */
+}
+
+/* Contact Section */
+.contact {
+  padding: 20px;
+  background-color: #333; /* Blue background */
+  color: #333; /* Dark text */
+}
+
+.contact h2 {
+  color: white; /* Change heading text to white */
+}
+
+.contact p, .contact a {
+  color: white; /* Change paragraph and link text to white */
+}
+
+/* Fun Links Section */
+.fun-links {
+  padding: 20px;
+  background-color: #553e66; /* Match the purple background */
+  color: white; /* White text for readability */
+  text-align: center; /* Center the content */
+}
+
+.fun-links h2 {
+  color: white; /* White heading */
+}
+
+.fun-links a {
+  color: #007BFF; /* Blue link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.fun-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.fun-links .fun-link-button {
+  display: inline-block; /* Make the link behave like a button */
+  background-color: #333; /* Match the navbar color */
+  color: white; /* White text for the button */
+  padding: 10px 20px; /* Add padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-top: 10px; /* Add space above the button */
+}
+
+.fun-links .fun-link-button:hover {
+  background-color: #555; /* Slightly lighter color on hover */
+}
